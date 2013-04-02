@@ -2,7 +2,6 @@
 if (!isset($_SERVER['PHP_AUTH_USER'])) {
     header('WWW-Authenticate: Basic realm="Administrator Only"');
     header('HTTP/1.0 401 Unauthorized');
-	include('layouts/footer.php');	
 		//log file info
   		$file='admin/unauthorized.txt';
   		$address = $_SERVER['REMOTE_ADDR'];		
