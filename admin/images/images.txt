@@ -1,0 +1,1 @@
+<!--image folder for both public and admin view -->
