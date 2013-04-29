@@ -24,7 +24,7 @@ switch($text){
 }
 	//defines constant
 	define("COPY_FORMAT", $form);
-	define("USER_NAME"," Teresa McAvoy");
+	define("USER_NAME"," Red Team");
 // end footer 
 
 	//prints constants
