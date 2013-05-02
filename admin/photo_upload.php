@@ -51,11 +51,12 @@ if(isset($_FILES['file']['name'])&&!empty($_FILES['file']['name']))
 				$filename = "images/".$_FILES['file']['name'];
 				$type = $_FILES['file']['type'];
 				$size = $_FILES['file']['size'];
-				$caption = $_FILES['file']['caption'];
+				$caption = $_POST['caption'];
+				$cap=htmlentities($caption);
 	
 				//insert into database
 				$sql="INSERT INTO photographs(filename, type, size, caption)
-				VALUES('$filename','$type','$size','$caption')";
+				VALUES('$filename','$type','$size','$cap')";
 				$result=mysql_query($sql);
 			
 			}
